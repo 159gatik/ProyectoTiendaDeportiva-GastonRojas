@@ -2,6 +2,63 @@
 @import url("https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,300&display=swap");
+footer {
+  grid-area: footer;
+  color: #252525;
+  padding: 10px 10px;
+}
+
+.contenidoFooter {
+  text-align: center;
+  background-color: #d6d6d6;
+  box-shadow: #26394d 0px 20px 30px -10px;
+}
+
+.contenidoFooter p {
+  font-family: "Poppins", sans-serif;
+  font-weight: 550;
+  font-size: 15px;
+}
+
+.color-red1 {
+  color: #6d2323;
+  font-size: 40px;
+}
+
+.color-red2 {
+  color: #1f54ff;
+  font-size: 40px;
+}
+
+.color-red3 {
+  color: #ff6600;
+  font-size: 40px;
+}
+
+.color-red4 {
+  color: green;
+  font-size: 40px;
+}
+
+.contactos {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.contactos a {
+  font-family: "Poppins", sans-serif;
+}
+
+.link--color {
+  font-weight: 600;
+}
+
+.contactos a:hover {
+  color: #039116;
+  text-decoration: none;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -416,63 +473,6 @@ hr {
 
 /* Fin de registro */
 /* Inicio de footer */
-footer {
-  grid-area: footer;
-  color: #252525;
-  padding: 10px 10px;
-}
-
-.contenidoFooter {
-  text-align: center;
-  background-color: #d6d6d6;
-  box-shadow: #26394d 0px 20px 30px -10px;
-}
-
-.contenidoFooter p {
-  font-family: "Poppins", sans-serif;
-  font-weight: 550;
-  font-size: 15px;
-}
-
-.color-red1 {
-  color: #6d2323;
-  font-size: 40px;
-}
-
-.color-red2 {
-  color: #1f54ff;
-  font-size: 40px;
-}
-
-.color-red3 {
-  color: #ff6600;
-  font-size: 40px;
-}
-
-.color-red4 {
-  color: green;
-  font-size: 40px;
-}
-
-.contactos {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.contactos a {
-  font-family: "Poppins", sans-serif;
-}
-
-.link--color {
-  font-weight: 600;
-}
-
-.contactos a:hover {
-  color: #039116;
-  text-decoration: none;
-}
-
 /* Fin del footer */
 .buttonWhatsapp {
   position: fixed;

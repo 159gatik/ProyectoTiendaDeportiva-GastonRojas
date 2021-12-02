@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,300&display=swap');
+@import "footer";
 
 $tittle-font: 40px Bebas Neue;
 $cont-font: 20px "Open Sans", sans-serif;
@@ -438,48 +439,6 @@ hr {
 /* Fin de registro */
 
 /* Inicio de footer */
-
-footer {
-    grid-area: footer;
-    color: #252525;
-    padding: 10px 10px;
-  }
-  
-.contenidoFooter {
-    text-align: center;
-    background-color: rgb(214, 214, 214);
-    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
-  }
-  
-  .contenidoFooter p {
-    font-family: "Poppins", sans-serif;
-    font-weight: 550;
-    font-size: 15px;
-  }
-@each $red, $color in $redes {
-    .color-#{$red} {
-        color: $color;
-        font-size: 40px;
-    }
-}
-  
-.contactos {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    a{
-        font-family: "Poppins", sans-serif;
-    }
-}
-.link--color {
-    font-weight: 600;
-}
-  
-.contactos a:hover {
-    color: #039116;
-    text-decoration: none;
-}
 
 /* Fin del footer */
 
