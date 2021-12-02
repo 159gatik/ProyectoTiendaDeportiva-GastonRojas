@@ -381,9 +381,20 @@ hr {
         display: none
     }
     .prendas{
+        margin-top: 30px;
+         width: 100%;
+         display: flex;
+         gap: 20px;
+         padding-bottom: 50px;
+    }
+    .indumentaria{
         display: flex;
+        flex-direction:column;
+        padding: 20px 15px;
+        box-shadow: $box-shadow-bottom-only;
     }
     .indumentaria img{
+        height: 100px;
         width: 100%;
     }
 

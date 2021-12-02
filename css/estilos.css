@@ -542,10 +542,22 @@ hr {
   }
 
   .prendas {
+    margin-top: 30px;
+    width: 100%;
     display: flex;
+    gap: 20px;
+    padding-bottom: 50px;
+  }
+
+  .indumentaria {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 15px;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
   }
 
   .indumentaria img {
+    height: 100px;
     width: 100%;
   }
 }
