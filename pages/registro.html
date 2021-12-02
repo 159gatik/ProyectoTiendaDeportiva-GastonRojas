@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Registrate a la pagina para encontrar descuentos, novedades y muchas más cosas">
+    <meta name="keywords" content="registro, cuenta, descuentos, novedades, deportes, zapatillas, adidas, puma, nike">
+    <link rel="stylesheet" href="../css/estilos.css">
+    <link rel="shortcut icon" href="../img/ejercicio.png">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+        integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
+        crossorigin="anonymous"></script>
+    <title>Registro</title>
+</head>
+
+<body>
+    <header class="col-12 col-md-12">
+        <div class="firstHeader">
+            <a class="instagram" href="https://www.instagram.com.ar/"><i class="fab fa-instagram"></i>Instagram</a>
+        </div>
+        <div class="hleft"></div>
+        <div class="myHeader">
+            <div class=" d-flex justify-content-center align-items-center">
+                <form class="d-flex justify-content-center align-items-center">
+                    <input class="form-control mr-sm-2" type="text" placeholder="¿Qué estás buscando?">
+                    <button class="btn btn-outline-dark my-2 my-sm-0" type="submit"><i
+                            class="fas fa-search"></i></button>
+                </form>
+                <div class="search">
+                    <button type="button" class="btn" data-toggle="modal" data-target="#modalLRForm"
+                        data-whatever="@mdo"><i class="fas fa-user"></i></button>
+                </div>
+                <div class="pl-2 search">
+                    <button class="btn btn-outline my-2 my-sm-0" type="submit"><i
+                            class="fas fa-shopping-cart"></i></button>
+                </div>
+            </div>
+        </div>
+
+    </header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="../index.html"><img src="../img/icono.png" alt="Mancuerna"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ">
+                <li class="nav-item">
+                    <a class="nav-link font-weight-bold" href="../index.html">Inicio<span class="sr-only"></span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link font-weight-bold" href="./catalogo.html">Catalogo</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link font-weight-bold" href="./ofertas.html">Ofertas</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link font-weight-bold" href="./preguntasfrecuentes.html">Preguntas frecuentes</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link font-weight-bold" href="./tabladetalles.html">Tabla de talles</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link font-weight-bold" href="./registro.html">Registro</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <!-- FORMULARIO -->
+        <div class="ingreso">
+            <div class="modal fade" id="modalLRForm" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Ingresar</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <form>
+                                <div class="input-group username">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text"><i class="fas fa-user-tie"></i></span>
+                                    </div>
+                                    <input type="text" name="" class="form-control" placeholder="Usuario o email" />
+                                </div>
+                                <div class="input-group password">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text"><i class="fa fa-key icon"></i></span>
+                                    </div>
+                                    <input type="Password" name="" class="form-control" placeholder="Contraseña" />
+                                </div>
+                            </form>
+                        </div>
+                        <div class="modal-footer d-flex justify-content-center">
+                            <div class="checkbox pr-1">
+                                <input type="checkbox" value="" />
+                                <label>Recordarme</label>
+                            </div>
+                            <button type="submit" class="btn btn-success"><span class="glyphicon glyphicon-off"></span>
+                                Ingresar</button>
+                            <button type="submit" class="btn btn-info"><span
+                                    class="glyphicon glyphicon-remove"></span>Ingresar por Facebook</button>
+                            <div class="footer p-1">
+                                <p>¿No estás registrado?<a href="#">Registrate acá</a></p>
+                                <a href="#"> ¿Olvidaste la contraseña?</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- FIN DEL FORMULARIO -->
+        <!-- REGISTRO -->
+        <div class="container">
+            <div class="card">
+                <article class="card-body mx-auto">
+                    <h4 class="card-title mt-3 text-center">Crear cuenta</h4>
+                    <p>
+                        <a href="" class="btn btn-block btn-twitter"> <i class="fab fa-twitter"></i> Ingresar via
+                            Twitter</a>
+                        <a href="" class="btn btn-block btn-facebook"> <i class="fab fa-facebook-f"></i> Ingresar via
+                            facebook</a>
+                    </p>
+                    <p class="divider-text">
+                        <span class="bg-light">O</span>
+                    </p>
+                    <form>
+                        <div class="form-group input-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text"> <i class="fa fa-user"></i> </span>
+                            </div>
+                            <input name="" class="form-control" placeholder="Nombre completo" type="text">
+                        </div>
+                        <div class="form-group input-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text"> <i class="fa fa-envelope"></i> </span>
+                            </div>
+                            <input name="" class="form-control" placeholder="Ingrese su email" type="email">
+                        </div>
+                        <div class="form-group input-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text"> <i class="fa fa-phone"></i> </span>
+                            </div>
+                            <select class="custom-select" style="max-width: 120px;">
+                                <option selected="">+54</option>
+                            </select>
+                            <input name="" class="form-control" placeholder="Telefono" type="text">
+                        </div>
+                        <div class="form-group input-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text"><i class="fas fa-users"></i></span>
+                            </div>
+                            <select class="form-control">
+                                <option selected="">Género</option>
+                                <option>Hombre</option>
+                                <option>Mujer</option>
+                                <option>Prefiero no decirlo</option>
+                            </select>
+                        </div>
+                        <div class="form-group input-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text"> <i class="fa fa-lock"></i> </span>
+                            </div>
+                            <input class="form-control" placeholder="Create password" type="password">
+                        </div>
+                        <div class="form-group input-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text"> <i class="fa fa-lock"></i> </span>
+                            </div>
+                            <input class="form-control" placeholder="Repeat password" type="password">
+                        </div>
+                        <div class="form-group input-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text"><i class="fas fa-home"></i></span>
+                            </div>
+                            <input type="text" class="form-control" id="validationDefault03" placeholder="Ciudad"
+                                required>
+                        </div>
+                        <div class="form-group input-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text"><i class="fas fa-home"></i></span>
+                            </div>
+                            <input type="text" class="form-control" id="validationDefault04" placeholder="Provincia"
+                                required>
+                        </div>
+                        <div class="d-flex p-3">
+                            <div class="checkbox p-2">
+                                <input type="checkbox" value="" />
+                            </div>
+                            <div>
+                                <label>Acepto las Políticas de Privacidad y Términos y Condiciones</label>
+                            </div>
+                        </div>
+                        <div class="d-flex p-3">
+                            <div class="checkbox p-2">
+                                <input type="checkbox" value="" />
+                            </div>
+                            <div>
+                                <label>Quiero recibir emails de promociones y noticias.</label>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <button type="submit" class="btn btn-primary btn-block"> Crear cuenta </button>
+                        </div>
+                        <p class="text-center">¿Tienes una cuenta? <a href="">Ingresar</a> </p>
+                    </form>
+                </article>
+            </div>
+        </div>
+        <hr>
+    </main>
+    <br>
+    <!-- COMIENZO DEL FOOTER -->
+    <footer>
+        <div class="contenido row justify-content-around align-items-center pl-5">
+            <div class="contenidoFooter">
+                <span class="color-red1">
+                    <i class="fas fa-truck"></i>
+                </span>
+                <h3 class="contactos__h3">Envios a todo el país</h3>
+                <p>Seleccioná tu método de envío y recibí tu pedido en cualquier punto del país.</p>
+            </div>
+            <div class="contenidoFooter">
+                <span class="color-red2">
+                    <i class="fab fa-cc-visa color-2"></i>
+                </span>
+                <span class="color-red3">
+                    <i class="fab fa-cc-mastercard color-3"></i>
+                </span>
+                <h3 class="contactos__h3">Pagá como quieras</h3>
+                <p>Elegí el método de pago que prefieras: transferencia bancaria, depósito bancario o Mercado Pago.</p>
+            </div>
+            <div class="contenidoFooter">
+                <span class="color-red4"><i class="fab fa-whatsapp"></i></span>
+                <h3 class="contactos__h3">Atención personalizada por Whatsapp</h3>
+                <p>+54 1133375158</p>
+            </div>
+        </div>
+        <div class="contenido">
+            <div class="contactos">
+                <h3 class="contactos__h3">Categorias</h3>
+                <a href="#">Hombre</a>
+                <a href="#" class="link link--color">Mujer</a>
+                <a href="#">Infantil</a>
+                <a href="#" class="link link--color">Accesorios</a>
+                <a href="#">Calzados</a>
+            </div>
+            <div class="contactos">
+                <h3 class="contactos__h3">Ayuda</h3>
+                <a href="#" class="link link--color">¿Cómo comprar?</a>
+                <a href="#">Seguimiento</a>
+                <a href="#" class="link link--color">Preguntas frecuentes</a>
+                <a href="#">Monto minimo</a>
+                <a href="#" class="link link--color">Mi cuenta</a>
+            </div>
+            <div class="contactos">
+                <h3 class="contactos__h3">Contacto</h3>
+                <a href="#">Número de telefono</a>
+                <a href="#" class="link link--color">Whatsapp</a>
+                <a href="#">Instagram</a>
+                <a href="#" class="link link--color">Facebook</a>
+                <a href="#">Email</a>
+            </div>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"
+        integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

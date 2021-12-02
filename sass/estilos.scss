@@ -1,0 +1,517 @@
+@import url('https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,300&display=swap');
+
+$tittle-font: 40px Bebas Neue;
+$cont-font: 20px "Open Sans", sans-serif;
+$box-shadow-bottom-only:  rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+$color-pink: rgb(255, 220, 220);
+$color-black: black ;
+$color-gray: rgb(49, 49, 49);
+$color-blue: rgb(47, 102, 206);
+$ancho: 400px;
+$alto: 400px;
+$ropa: remera;
+$fondo: blanco;
+$base-color: #8a8a8a;
+$redes: (
+    red1: rgb(109, 35, 35),
+    red2: rgb(31, 84, 255),
+    red3: rgb(255, 102, 0),
+    red4: green);
+
+
+
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: grid;
+    grid-template-areas: "header1 header1 header1" "nav nav nav" "productos productos productos" "footer footer footer";
+    grid-template-rows: 100px auto auto;
+    grid-template-columns: auto auto 0;
+    width: 100%;
+    @if $fondo == rosa {
+        background: linear-gradient(to bottom, #ffffff, #fee0ff, #ffa1fa);
+    }
+    @else if $fondo==verde {
+        background: linear-gradient(to bottom, #31643d, #d6ffdb, #ffffff);
+    }
+    @else {
+        background: linear-gradient(to bottom, #ffffff, #f7f7f7, #dbdbdb);
+    }
+}
+
+header {
+    grid-area: header1;
+    width: 100%;
+    height: 100px;
+    position: sticky;
+    background-color: $color-pink;
+}
+
+.firstHeader {
+    text-align: center;
+    font-weight: bold;
+    .instagram {
+        font-size: $cont-font;
+        text-decoration: none;
+        background-color: rgb(245, 245, 245);
+        padding: 10px 20px 10px;
+        border-radius: 20px;
+        color: rgb(117, 117, 117);
+        i { 
+            color: rgb(212, 0, 255);
+            padding-right: 10px;
+            font-size: 20px;
+        }
+    }
+}
+.hleft {
+    width: 100px;
+    height: 100%;
+    background-image: url(../img/logo.png);
+    background-position: left;
+    background-size: cover;
+    float: left;
+}
+
+.d-flex {
+    justify-content: center;
+    align-items: center;
+    form {
+           padding: 35px;
+           width: 50vh;
+           input {
+                   text-align: center;
+            }
+    }
+}
+/* Lista Navegacion */
+nav {
+    grid-area: nav;
+}
+.collapse {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.username {
+    padding: 20px;
+  }
+  
+  .password {
+    padding: 20px;
+  }
+  
+  .modal-footer {
+    text-align: center;
+  }
+
+/* Fin del header */
+
+/* Contenido de inicio */
+
+main {
+    grid-area: productos;
+}
+ 
+/* Carrusel */
+.mycarousel__img {
+    width: 100%;
+    height: ($alto/2)+150;
+}
+
+.carousel-control-prev-icon {
+    position: relative;
+    left: 50%;
+}
+
+.sec {
+    width: 100%;
+}
+
+.carousel-indicators li {
+    height: 5px;
+    width: 20px;
+}
+/* Fin de Carrusel */
+
+.contenidoHome {
+    width: 100%;
+    margin-top: 30px;
+    text-align: center;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    h2{
+        @if $ropa == pantalon {
+            color: rgb(0, 99, 192);
+        }
+        @else if $ropa== camisa {
+            color: rgb(0, 0, 0);
+        }
+        @else {
+            color: rgb(49, 49, 49); 
+            font: $tittle-font;
+        }
+    }
+}
+.prendas {
+    margin-top: 30px;
+    width: 100%;
+    display: flex;
+    gap: 20px;
+    padding-bottom: 50px;
+    img{
+        width: $ancho/2;
+        }
+        img:hover {
+            transition: all 1s;
+            transform: scale(1.1);
+        }
+        @for $in from 1 through 5 {
+            .prenda-#{$in} {
+                background-color: lighten($base-color, $in * 10%);
+            }
+        }
+    }
+.indumentaria {
+    display: flex;
+    flex-direction:column;
+    padding: 20px 15px;
+    box-shadow: $box-shadow-bottom-only;
+    a { 
+        background-color: $color-blue;
+        border-radius: 20px;
+        color: $color-black;
+        padding: 10px 10px;
+        font-family: 'Bebas Neue';
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 15px;
+        margin: 2px 2px;
+    }
+        h2 {
+             font: $cont-font;
+        }
+        a:hover {
+                  background-color: $color-gray;
+                  color: #ffffff;
+                  transition: all 1s;
+        }
+}
+
+.contenido {
+    margin-top: 30px;
+    width: 100%;
+    display: grid;
+    justify-content: center;
+    padding-bottom: 50px;
+    img{
+        width: 200px;
+        }
+        img:hover {
+            transition: all 1s;
+            transform: scale(1.2);
+        }
+    }
+    .pagination {
+        justify-content: center;
+        .page-link{
+            color: rgb(0, 0, 0);
+            font-weight: 600;
+            background-color: $color-pink;
+        }
+    }
+    .categorias{
+        gap: 20px;
+    }
+    
+    .hombres-catalogo,
+    .mujeres-catalogo,
+    .niños-catalogo {
+        list-style-type: none;
+        img{
+            width: $ancho;
+        }
+    }
+    @each $categoria in hombres , mujeres , niños {
+        .#{$categoria}-catalogo {
+            border: 2px solid rgb(170, 170, 170);
+            box-shadow: $box-shadow-bottom-only
+        }
+        
+    }
+
+/*  fin del home */
+
+/* Comienzo de ofertas */
+
+.imagenOferta {
+    width: 100%;
+}
+
+.categoriasOfertas {
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-size: 25px;
+    color: #212122;
+    text-align: center;
+    width: 100%;
+}
+
+.remera {
+    width: 200px;
+}
+
+hr {
+    margin: auto;
+    width: 75%;
+}
+
+/* inicio preguntas frecuentes */
+
+.preguntasFrecuentes {
+    padding: 10px;
+}
+
+.preguntas {
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    color: rgb(32, 32, 32);
+    font-size: 25px;
+    text-align: center;
+    background-color: $color-pink;
+    padding: 10px;
+    animation-duration: 3s;
+    animation-name: preguntas;
+}
+
+@keyframes preguntas {
+    from {
+        margin-left: 100%;
+        width: 300%;
+    }
+    to {
+        margin-left: 0%;
+        width: 100%;
+    }
+}
+
+.respuestas {
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-size: 20px;
+    text-align: center;
+    padding: 20px;
+    animation-duration: 3s;
+    animation-name: respuestas;
+}
+
+@keyframes respuestas {
+    from {
+        margin-left: 100%;
+        width: 300%;
+    }
+    to {
+        margin-left: 0%;
+        width: 100%;
+    }
+}
+
+.lista {
+    list-style: inside;
+    list-style-image: url(./img/buy.png);
+    text-align: center;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-size: 20px;
+    padding: 20px;
+    animation-duration: 3s;
+    animation-name: respuestas;
+}
+
+/* Inicio de tabla de talles */
+
+.talles {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10px 50px;
+}
+
+.remerasTalles {
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    color: #074874;
+    text-align: center;
+    padding: 20px 10px 20px;
+}
+
+.topTalles {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style: none;
+    font-size: 20px;
+    font-family: 'Bebas Neue', cursive;
+    padding: 10px 10px 10px;
+    li{
+    padding-right: 5px;
+    }
+}
+
+.medidasTalles {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style: none;
+    padding: 20px 10px 20px;
+    font-weight: bold;
+    border: 1px solid rgb(0, 0, 0);
+}
+
+.contactos__h3 {
+    text-align: center;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 35px;
+}
+
+.remeraDiseño {
+    width: 200px;
+}
+
+/* Inicio de registro */
+
+.card-body {
+    max-width: 400px;
+  }
+  
+.divider-text {
+    position: relative;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    span{
+        padding: 7px;
+    font-size: 12px;
+    position: relative;
+    z-index: 2;
+    }
+}
+  
+.divider-text:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    border-bottom: 1px solid $color-gray;
+    top: 55%;
+    left: 0;
+    z-index: 1;
+}
+  
+.btn-twitter i {
+    font-size: 20px;
+    color: #00b2f8;
+}
+  
+  .btn-twitter:hover {
+    background-color: rgb(148, 238, 245);
+  }
+  
+  .btn-facebook i {
+    font-size: 20px;
+    color: rgb(0, 68, 255);
+  }
+  
+  .btn-facebook:hover {
+    background-color: #5890f8;
+  }
+
+/* Fin de registro */
+
+/* Inicio de footer */
+
+footer {
+    grid-area: footer;
+    color: #252525;
+    padding: 10px 10px;
+  }
+  
+.contenidoFooter {
+    text-align: center;
+    background-color: rgb(214, 214, 214);
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+  }
+  
+  .contenidoFooter p {
+    font-family: "Poppins", sans-serif;
+    font-weight: 550;
+    font-size: 15px;
+  }
+@each $red, $color in $redes {
+    .color-#{$red} {
+        color: $color;
+        font-size: 40px;
+    }
+}
+  
+.contactos {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    a{
+        font-family: "Poppins", sans-serif;
+    }
+}
+.link--color {
+    font-weight: 600;
+}
+  
+.contactos a:hover {
+    color: #039116;
+    text-decoration: none;
+}
+
+/* Fin del footer */
+
+.buttonWhatsapp {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 40px;
+    right: 40px;
+    background-color: #25d366;
+    color: #fff;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 2px 2px 3px #999;
+    z-index: 100;
+}
+
+.my-float {
+    margin-top: 16px;
+}
+
+@media only screen and (min-width: 576pxpx) {
+    header{
+        grid-template-columns: auto;
+    }
+}
+
+@media only screen and (min-width: 768px) {}
+
+@media only screen and (min-width: 1024px) {
+    .contenido {
+        grid-template-columns: repeat(6, auto);
+    }
+}
