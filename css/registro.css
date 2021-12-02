@@ -1,0 +1,46 @@
+.card-body {
+  max-width: 400px;
+}
+
+.divider-text {
+  position: relative;
+  text-align: center;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+.divider-text span {
+  padding: 7px;
+  font-size: 12px;
+  position: relative;
+  z-index: 2;
+}
+
+.divider-text:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  border-bottom: 1px solid #313131;
+  top: 55%;
+  left: 0;
+  z-index: 1;
+}
+
+.btn-twitter i {
+  font-size: 20px;
+  color: #00b2f8;
+}
+
+.btn-twitter:hover {
+  background-color: #94eef5;
+}
+
+.btn-facebook i {
+  font-size: 20px;
+  color: #0044ff;
+}
+
+.btn-facebook:hover {
+  background-color: #5890f8;
+}
+
+/*# sourceMappingURL=registro.css.map */

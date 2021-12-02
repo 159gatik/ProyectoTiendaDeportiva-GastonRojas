@@ -1,0 +1,47 @@
+$color-gray: rgb(49, 49, 49);
+
+
+.card-body {
+    max-width: 400px;
+  }
+  
+.divider-text {
+    position: relative;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    span{
+        padding: 7px;
+    font-size: 12px;
+    position: relative;
+    z-index: 2;
+    }
+}
+  
+.divider-text:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    border-bottom: 1px solid $color-gray;
+    top: 55%;
+    left: 0;
+    z-index: 1;
+}
+  
+.btn-twitter i {
+    font-size: 20px;
+    color: #00b2f8;
+}
+  
+  .btn-twitter:hover {
+    background-color: rgb(148, 238, 245);
+  }
+  
+  .btn-facebook i {
+    font-size: 20px;
+    color: rgb(0, 68, 255);
+  }
+  
+  .btn-facebook:hover {
+    background-color: #5890f8;
+  }
