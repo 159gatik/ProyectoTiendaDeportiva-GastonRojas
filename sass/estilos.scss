@@ -34,12 +34,16 @@ body {
 header {
     grid-area: header1;
     width: 100%;
-    height: 132px;
+    height: 100px;
     position: sticky;
+    top: 0;
+    z-index: 100;
     background-color: gray;
 }
 
-.d-flex {
+.myHeader {
+    height: 55px;
+    width: 100%;
     justify-content: center;
     align-items: center;
     form {
@@ -67,17 +71,17 @@ header {
 }
 
 .fa-instagram {
-    font-size: 20px;
+    font-size: 25px;
     color: blueviolet;
 }
 
 .fa-facebook-square {
-    font-size: 20px;
+    font-size: 25px;
     padding-left: 10px;
 }
 
 .fa-whatsapp-square {
-    font-size: 20px;
+    font-size: 25px;
     color: green;
     padding-left: 10px;
 }
@@ -184,8 +188,6 @@ main {
         padding: 10px 10px;
         font-family: 'Bebas Neue';
         text-align: center;
-        text-decoration: none;
-        display: inline-block;
         font-size: 15px;
         margin: 2px 2px;
     }
@@ -196,6 +198,7 @@ main {
                   background-color: $color-gray;
                   color: #ffffff;
                   transition: all 1s;
+                  text-decoration: none;
         }
 }
 
@@ -222,7 +225,8 @@ main {
         }
     }
     .categorias{
-        gap: 20px;
+        display: flex;
+        justify-content: space-evenly;
     }
     
     .hombres-catalogo,
@@ -346,7 +350,16 @@ hr {
     header{
         display: grid;
     }
+    
+    .titulo{
+        font-size: 15px;
 
+    }
+
+    .tituloIcono img{
+        margin-top: 10px;
+        width: 30px;
+    }
     .categorias{
         display: inline-block;
     }
@@ -360,7 +373,12 @@ hr {
         display: block;
 
     }
+    
+    .contenido{
+        flex-direction: column;
+    }
 }
+
 
 @media only screen and (min-width: 768px) {
     body{
@@ -369,6 +387,15 @@ hr {
 
     header{
         display: grid;
+    }
+
+    .titulo{
+        font-size: 20px;
+
+    }
+
+    .tituloIcono img{
+        margin: 0;
     }
 
     .categorias{
@@ -397,9 +424,14 @@ hr {
         height: 100px;
         width: 100%;
     }
-
+    
+    .contenido{
+    display: flex;
+    flex-direction: row;
 }
 
+
+}
 
 
 @media only screen and (min-width: 1024px) {
@@ -410,10 +442,8 @@ hr {
     header{
         display: grid;
     }
-
-    .categorias{
-        display: flex;
-        justify-content: space-around;
+    .titulo{
+        font-size: 40px;
     }
     .categorias img{
         width: 400px;
@@ -438,5 +468,9 @@ hr {
         height: 200px;
         width: 200px;
     }
+    
+    .contenido{
+        display: flex;
+}
 
 }
