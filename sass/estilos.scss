@@ -144,6 +144,10 @@ main {
     display: grid;
     justify-content: center;
     align-content: center;
+    p{
+        font-size: 15px;
+        font-style: italic;
+    }
     h2{
         @if $ropa == pantalon {
             color: rgb(0, 99, 192);
@@ -155,7 +159,9 @@ main {
             color: rgb(49, 49, 49); 
             font: $tittle-font;
         }
+    
     }
+
 }
 .prendas {
     margin-top: 30px;
@@ -398,8 +404,7 @@ hr {
     }
 
     .titulo{
-        font-size: 20px;
-
+        font-size: 30px;
     }
 
     .tituloIcono img{
@@ -417,21 +422,20 @@ hr {
         display: none
     }
     .prendas{
+        display: block;
         margin-top: 30px;
          width: 100%;
-         display: flex;
          gap: 20px;
          padding-bottom: 50px;
     }
     .indumentaria{
         display: flex;
-        flex-direction:column;
         padding: 20px 15px;
         box-shadow: $box-shadow-bottom-only;
     }
     .indumentaria img{
-        height: 100px;
-        width: 100%;
+        width: 200px;
+
     }
     
     .contenido{
@@ -459,8 +463,6 @@ hr {
     box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
   }
 
-
-
 }
 
 
@@ -477,7 +479,7 @@ hr {
         width: 100%;
     }
     .titulo{
-        font-size: 20px;
+        font-size: 30px;
     }
     .categorias{
         display: flex;
@@ -490,9 +492,9 @@ hr {
         display: none
     }
     .prendas{
+        display: flex;
         margin-top: 30px;
          width: 100%;
-         display: flex;
          gap: 20px;
          padding-bottom: 50px;
     }
@@ -507,9 +509,6 @@ hr {
         width: 200px;
     }
     
-    .contenido{
-        display: flex;
-}
 
 .topTalles {
     display: block;
@@ -547,7 +546,7 @@ hr {
         width: 100%;
     }
     .titulo{
-        font-size: 20px;
+        font-size: 40px;
     }
     .categorias{
         display: flex;

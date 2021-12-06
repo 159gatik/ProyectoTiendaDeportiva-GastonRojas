@@ -295,6 +295,10 @@ main {
   justify-content: center;
   align-content: center;
 }
+.contenidoHome p {
+  font-size: 15px;
+  font-style: italic;
+}
 .contenidoHome h2 {
   color: #313131;
   font: 40px Bebas Neue;
@@ -557,7 +561,7 @@ hr {
   }
 
   .titulo {
-    font-size: 20px;
+    font-size: 30px;
   }
 
   .tituloIcono img {
@@ -578,23 +582,21 @@ hr {
   }
 
   .prendas {
+    display: block;
     margin-top: 30px;
     width: 100%;
-    display: flex;
     gap: 20px;
     padding-bottom: 50px;
   }
 
   .indumentaria {
     display: flex;
-    flex-direction: column;
     padding: 20px 15px;
     box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
   }
 
   .indumentaria img {
-    height: 100px;
-    width: 100%;
+    width: 200px;
   }
 
   .contenido {
@@ -636,7 +638,7 @@ hr {
   }
 
   .titulo {
-    font-size: 20px;
+    font-size: 30px;
   }
 
   .categorias {
@@ -653,9 +655,9 @@ hr {
   }
 
   .prendas {
+    display: flex;
     margin-top: 30px;
     width: 100%;
-    display: flex;
     gap: 20px;
     padding-bottom: 50px;
   }
@@ -670,10 +672,6 @@ hr {
   .indumentaria img {
     height: 200px;
     width: 200px;
-  }
-
-  .contenido {
-    display: flex;
   }
 
   .topTalles {
@@ -710,7 +708,7 @@ hr {
   }
 
   .titulo {
-    font-size: 20px;
+    font-size: 40px;
   }
 
   .categorias {
