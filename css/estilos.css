@@ -444,7 +444,6 @@ hr {
   font-size: 20px;
   font-family: "Bebas Neue", cursive;
 }
-
 .topTalles ul p {
   list-style-type: none;
   margin: 10px;
@@ -489,12 +488,17 @@ hr {
   }
 
   .mycarousel img {
-    height: 100px;
+    height: 200px;
     width: 100%;
   }
 
   .titulo {
     font-size: 15px;
+  }
+
+  .BannerOferta img {
+    height: 150px;
+    width: 100%;
   }
 
   .tituloIcono img {
@@ -556,16 +560,21 @@ hr {
   }
 
   .mycarousel img {
-    height: 200px;
+    height: 250px;
     width: 100%;
   }
 
   .titulo {
-    font-size: 30px;
+    font-size: 20px;
   }
 
   .tituloIcono img {
     margin: 0;
+  }
+
+  .BannerOferta img {
+    height: 200px;
+    width: 100%;
   }
 
   .categorias {
@@ -638,7 +647,12 @@ hr {
   }
 
   .titulo {
-    font-size: 30px;
+    font-size: 40px;
+  }
+
+  .BannerOferta img {
+    height: 300px;
+    width: 100%;
   }
 
   .categorias {

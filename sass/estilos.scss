@@ -282,17 +282,16 @@ hr {
     text-align: center;
     font-size: 20px;
     font-family: "Bebas Neue", cursive;
+    ul p{
+        list-style-type: none;
+        margin: 10px;
+        padding: 10px;
+        color: #f7f7f7;
+        background-color: rgb(124, 124, 124);
+        border-radius: 10px;
+        box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+      }
   
-  }
-  
-  .topTalles ul p{
-    list-style-type: none;
-    margin: 10px;
-    padding: 10px;
-    color: #f7f7f7;
-    background-color: rgb(124, 124, 124);
-    border-radius: 10px;
-    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
   }
 
 .diseño img{
@@ -330,15 +329,17 @@ hr {
     }
 
     .mycarousel img{
-        height: 100px;
+        height: 200px;
         width: 100%;
     }
-    
     .titulo{
         font-size: 15px;
 
     }
-
+    .BannerOferta img{
+        height: 150px;
+        width: 100%;
+    }
     .tituloIcono img{
         margin-top: 10px;
         width: 30px;
@@ -388,8 +389,6 @@ hr {
 
 }
 
-
-
 @media only screen and (min-width: 768px) {
     body{
         display: block;
@@ -399,16 +398,20 @@ hr {
         display: grid;
     }
     .mycarousel img{
-        height: 200px;
+        height: 250px;
         width: 100%;
     }
 
     .titulo{
-        font-size: 30px;
+        font-size: 20px;
     }
 
     .tituloIcono img{
         margin: 0;
+    }
+    .BannerOferta img{
+        height: 200px;
+        width: 100%;
     }
 
     .categorias{
@@ -479,7 +482,11 @@ hr {
         width: 100%;
     }
     .titulo{
-        font-size: 30px;
+        font-size: 40px;
+    }
+    .BannerOferta img{
+        height: 300px;
+        width: 100%;
     }
     .categorias{
         display: flex;
