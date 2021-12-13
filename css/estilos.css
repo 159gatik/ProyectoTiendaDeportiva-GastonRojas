@@ -642,12 +642,12 @@ hr {
   }
 
   .mycarousel img {
-    height: 300px;
+    height: 350px;
     width: 100%;
   }
 
   .titulo {
-    font-size: 40px;
+    font-size: 30px;
   }
 
   .BannerOferta img {
@@ -661,7 +661,7 @@ hr {
   }
 
   .categorias img {
-    width: 400px;
+    width: 300px;
   }
 
   .barra {
@@ -670,8 +670,8 @@ hr {
 
   .prendas {
     display: flex;
+    flex-direction: column;
     margin-top: 30px;
-    width: 100%;
     gap: 20px;
     padding-bottom: 50px;
   }
@@ -707,79 +707,17 @@ hr {
     box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
   }
 }
-@media only screen and (min-width: 1531px) {
-  body {
-    display: grid;
-  }
-
-  header {
-    display: grid;
-  }
-
-  .mycarousel img {
-    height: 300px;
-    width: 100%;
-  }
-
+@media only screen and (min-width: 1290px) {
   .titulo {
     font-size: 40px;
   }
 
-  .categorias {
-    display: flex;
-    justify-content: center;
+  .prendas {
+    flex-direction: row;
   }
 
   .categorias img {
     width: 400px;
-  }
-
-  .barra {
-    display: none;
-  }
-
-  .prendas {
-    margin-top: 30px;
-    width: 100%;
-    display: flex;
-    gap: 20px;
-    padding-bottom: 50px;
-  }
-
-  .indumentaria {
-    display: flex;
-    flex-direction: column;
-    padding: 20px 15px;
-    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
-  }
-
-  .indumentaria img {
-    height: 200px;
-    width: 200px;
-  }
-
-  .contenido {
-    display: flex;
-  }
-
-  .topTalles {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    font-size: 20px;
-    font-family: "Bebas Neue", cursive;
-  }
-
-  .topTalles ul p {
-    display: flex;
-    list-style-type: none;
-    margin: 10px;
-    padding: 10px;
-    color: #f7f7f7;
-    background-color: #7c7c7c;
-    border-radius: 10px;
-    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
   }
 }
 
